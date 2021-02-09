@@ -10,6 +10,11 @@
     <!-- Font-Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css"></link>
 
     <title>Home</title>
@@ -25,7 +30,7 @@
             </div>
             <div id="navbar">
                 <ul id="list">
-                    <li><a href="./index.html" style="color: #045DD1;">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./coaching.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,10 +66,10 @@
                           </a>
                       </div>
                     </li>
-                    <li><a href="https://iatb.info/">IATBP</a></li>
-                    <div class="logo">
-                      <a ref="https://www.instagram.com/smolboy.fit/" class="fa fa-instagram"></a>
-                    </div>
+                    <li><a href="https://iatb.info/"><img id="iatb-logo" src="./assets/images/logos/iamtbp.PNG"></a></li>
+                    <li class="logo">
+                      <a href="https://www.instagram.com/smolboy.fit/" class="fa fa-instagram"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -73,11 +78,38 @@
     <!-- Background Image Logo -->
     <section>
       <div class="hero">
-        <span>EMPOWER YOUR PHYSIQUE!</span>
+        <div id="bar-one"></div>
+        <div id="bar-two"></div>
+        <div id="bar-three"></div>
+        <div id="header">
+          <i class="material-icons">fitness_center</i>
+          <br>
+          <span>SMOL BOY FITNESS</span>
+          <div id="below-headers">
+            <span>Data-Driven</span>
+            <span>Client-Centered</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div class="card text-center" id="one">
+    <!-- Consultation -->
+    <section id="consultation" style="background-image: url(./assets/images/weights/45-weights.jpg); background-position: center; background-size: cover;">
+      <div id="consul-text">
+        <h1>Book a Free Consultation</h1>
+        <p>
+          Not sure what coaching service is best for you? Go ahead and book a free 30-minute consultation with me and we can discuss what you need.
+        </p>
+        <br>
+        <br>
+        <p>
+          There's gonna be some text here about what SBF is about, mainly our mission statement. There's gonna be some text here about what SBF is about, mainly our mission statement. There's gonna be some text here about what SBF is about, mainly our mission statement.
+        </p>
+        <em>THE SBF PHILOSOPHY</em>
+      </div>
+    </section>
+
+    <!-- <div class="card text-center" id="one">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -87,19 +119,19 @@
 
     <div class="card" id="first">
       <img src="./assets/images/smolBoy/Flex 5.jpg" class="card-img-top" alt="...">
-    </div>
+    </div> -->
 
     <!-- Various Coaching Options -->
-    <div class="card text-center" id="coaching-budget-needs">
+    <!-- <div class="card text-center" id="coaching-budget-needs">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">Various coaching options to fit your budget needs and goals.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
-    </div>
+    </div> -->
 
     <!-- Coaching Containers --> 
-    <div class="card mb-3" id="coaching-container">
+    <!-- <div class="card mb-3" id="coaching-container">
       <div class="row no-gutters" id="gold">
         <div class="col-md-5" id="coaching">
           <h1>Coaching</h1>
@@ -111,7 +143,7 @@
                 </p>
             </div>
         </div>
-      </div>
+      </div> -->
 
     <div class="card mb-3">
         <div class="row no-gutters" id="gold">
@@ -120,8 +152,19 @@
           </div>
           <div class="col-md-8">
               <div class="card-body">
+                  <p id="various">
+                    Various coaching options to fit
+                    <br>
+                    your needs and goals.
+                  <hr>
+                  </p>
+                  <br>
+                  <br>
+                  <p class="card-header">
+                    ALL-IN PROGRAMMING 
+                  </p>
                   <p class="card-text">
-                      All-in Programming 
+                      And here we put a bunch of text about the SBF All-In Programming. And here we put a bunch of text about the SBF All-In Programming. And here we put a bunch of text about the SBF All-In Programming. And here we put a bunch of text about the SBF All-In Programming. And here we put a bunch of text about the SBF All-In Programming.And here we put a bunch of text about the SBF All-In Programming.
                   </p>
               </div>
           </div>

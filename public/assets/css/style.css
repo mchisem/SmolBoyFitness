@@ -35,16 +35,11 @@ body {
 }
 
 #navbar {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.navbar ul.navbar-nav a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+    float: right;
+    align-items: center;
+    justify-items: center;
+    padding-top: 1%;
+    height: 8vh;
 }
 
 #list li, 
@@ -53,6 +48,7 @@ body {
     color: white;
     float: left;
     margin-right: 10px;
+    font-size: 22px;
     list-style-type: none !important;
 }
 
@@ -69,13 +65,19 @@ body {
 }
 
 .logo {
-    position: absolute;
-    right: -2%;
+    display: inline;
+    margin-top: 1%;
 }
 
 .logo .fa {
     text-decoration: none;
     color: white;
+}
+
+#iatb-logo {
+    height: 13vh;
+    padding: 0;
+    margin-top: -28% !important;
 }
 
 #list li a:hover,
@@ -97,41 +99,154 @@ body {
     height: 100vh;
     max-width: 100%;
     padding: 0;
+    text-align: center;
     justify-content: center;
-    background-image: url(../images/logos/SmolBoyFitLogo.jpeg);
+    /* background-image: url(../images/weights/victor-freitas-dP-h8Cm4UXA-unsplash.jpg); */
+    background-image: url(../images/weights/pexels-victor-freitas-841130.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* filter: saturate(90%);
+    filter: contrast(50%);
+    filter: brightness(50%); */
+    /* filter: brightness(50%); */
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+    filter: saturate(90%);
+    filter: contrast(50%);
+    filter: brightness(50%);
+}
+
+#header {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9 !important;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    filter: brightness(100%);
 }
 
 .hero span {
     color: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 43px;
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    font-family: 'Oswald', "YACgEQY10lw 0", _fb_, auto;
+    font-size: 101.333px;
+    z-index: 10 !important;
+}
+
+#below-headers span {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column !important;
+    padding: 1.5%;
+    font-style: italic;
+    color: #fcc931;
+    filter: brightness(100%) !important;
+    z-index: 10 !important;
+}
+
+.material-icons {
+    font-size: 20vh;
+    transform: rotate(135deg) !important;
+    color: #fcc931;
+}
+
+#bar-one,
+#bar-two,
+#bar-three {
+    background-color: #2a4c09;
+    transform: rotate(-45deg);
+    position: absolute;
+    z-index: 9 !important;
+    filter: saturate(90%);
+    filter: contrast(50%);
+    filter: brightness(50%);
+}
+
+#bar-one {
+    width: 40vw;
+    height: 25vh;
+    left: -15%;
+    top: -25%;
+}
+
+#bar-two {
+    width: 40vw;
+    height: 65vh;
+    top: -50%;
+    left: -20%;
+    opacity: 0.5;
+}
+
+#bar-three {
+    width: 40vw;
+    height: 105vh;
+    top: -65%;
+    left: -30%;
+    opacity: 0.3;
 }
 
 /***************************/
 /* Section two */
 /***************************/
-.card-img, 
-.card-img-top {
-    border-top-left-radius: calc(0rem - 0px);
-    border-top-right-radius: calc(0rem - 0px);
+#consul-text {
+    padding: 2%;
+    width: 50%;
+    color: white;
+    font-size: 24px;
 }
 
-#one {
-    padding: 5%;
+#consul-text h1 {
+    color: #fcc931;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    width: fit-content;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-family: "YACgEUFdPdA 0", _fb_, auto;
+    font-size: 34.8668px;
+    font-size: 40px;
+    text-transform: none;
+    border: 10px solid #2a4c09;
+    padding: 1%;
 }
 
-#first {
-    margin-top: 0%;
-    background-color: black;
-    padding: 5% 20% 5% 20%;
+#consul-text em {
+    background-color: rgb(5, 29, 64);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-
 /***************************/
 /* Section 3 */
 /***************************/
@@ -150,24 +265,51 @@ body {
     border: none !important;
 }
 
-.card-text {
-    font-size: 24px;
-    color: white;
-    padding: 0 1.25rem 0 1.25rem;
-}
-
 .card {
     width: 100% !important;
     text-align: center !important;
     display: block;
-    background-color: #034CAA;
+    background-color: #fcc931;
+    background-color: #2a4c09;
     padding: 0% 0 0% 0;
     border-radius: 0% !important;
     border: none !important;
 }
 
 .card-body {
-    padding: 0 !important;
+    padding: 5% !important;
+    margin-left: 10%;
+    text-align: center !important;
+}
+
+#various {
+    font-weight: 400;
+    font-style: normal;
+    color: #fcc931;
+    text-decoration: none;
+    line-height: 1.4;
+    /* font-family: "YACgEUFdPdA 0", _fb_, auto; */
+    font-size: 28.2393px;
+    font-size: 37px;
+    text-transform: none;
+}
+
+hr {
+    background-color: #fcc931;
+    height: .5vh;
+}
+
+.card-header {
+    font-size: 64px;
+    color: #fcc931;
+    line-height: 1.4;
+    font-family: 'Oswald';
+    padding: 0 1.25rem 0 1.25rem;
+}
+
+.card-text {
+    color: white;
+    font-size: 27px;
 }
 
 .mb-3, .my-3 {
@@ -206,30 +348,30 @@ body {
 }
 
 #gold {
-    background-color: #EBC600;
+    color: #fcc931;
 }
 
-#gold .card-text {
+/* #gold .card-text {
     font-size: 48px;
     margin-left: 6%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 #green {
     background-color: #43B42C;
 }
 
-#green .card-text {
+/* #green .card-text {
     font-size: 48px;
     margin-left: -6%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 #green img {
     margin-left: -106px;
