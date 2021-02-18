@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 /***************************/
@@ -67,11 +68,12 @@ body {
 .logo {
     display: inline;
     margin-top: 1%;
+    color: white;
 }
 
 .logo .fa {
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 #iatb-logo {
@@ -92,6 +94,11 @@ body {
     border: none;
 }
 
+.fa.fa-instagram {
+    color: white !important;
+    text-decoration: white !important;
+}
+
 /*****************/
 /* Section one - Smol Boy Logo */
 /*****************/
@@ -101,8 +108,8 @@ body {
     padding: 0;
     text-align: center;
     justify-content: center;
-    /* background-image: url(../images/weights/victor-freitas-dP-h8Cm4UXA-unsplash.jpg); */
     background-image: url(../images/weights/pexels-victor-freitas-841130.jpg);
+    background-image: url(../images/weights/vanilla-weight-lifting.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -121,11 +128,8 @@ body {
     top: 0%;
     left: 0;
     right: 0;
-    background-color: black;
-    opacity: 0.7;
-    filter: saturate(90%);
     filter: contrast(50%);
-    filter: brightness(50%);
+    filter: brightness(20%);
 }
 
 #header {
@@ -247,9 +251,16 @@ body {
     padding-left: 2%;
     padding-right: 2%;
 }
+
 /***************************/
-/* Section 3 */
+/* Section 3/ Rows */
 /***************************/
+.row {
+    /* --bs-gutter-x: 1.5rem;  */
+    --bs-gutter-x: 0rem !important; 
+    --bs-gutter-y: 0;
+}
+
 #header {
     width: 100%;
     text-align: center;
@@ -257,19 +268,10 @@ body {
     color: white;
 }
 
-.icons:hover {
-    opacity: 0.5;
-}
-
-#picture {
-    border: none !important;
-}
-
 .card {
     width: 100% !important;
     text-align: center !important;
     display: block;
-    background-color: #fcc931;
     background-color: #2a4c09;
     padding: 0% 0 0% 0;
     border-radius: 0% !important;
@@ -277,9 +279,8 @@ body {
 }
 
 .card-body {
-    padding: 5% !important;
-    margin-left: 10%;
-    text-align: center !important;
+    padding: 7% !important;
+    text-align: center;
 }
 
 #various {
@@ -288,15 +289,9 @@ body {
     color: #fcc931;
     text-decoration: none;
     line-height: 1.4;
-    /* font-family: "YACgEUFdPdA 0", _fb_, auto; */
     font-size: 28.2393px;
     font-size: 37px;
     text-transform: none;
-}
-
-hr {
-    background-color: #fcc931;
-    height: .5vh;
 }
 
 .card-header {
@@ -305,6 +300,10 @@ hr {
     line-height: 1.4;
     font-family: 'Oswald';
     padding: 0 1.25rem 0 1.25rem;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    background-color: none !important;
 }
 
 .card-text {
@@ -316,82 +315,88 @@ hr {
     margin-bottom: 0rem !important;
 }
 
-/***************************/
-/* Section 4 - Budget Needs */
-/***************************/
-#coaching-budget-needs {
-    background-color: #034CAA;
-    padding: 5%;
+#blue,
+#image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/***************************/
-/* Section 5 - Coaching Services */
-/***************************/
-#coaching {
-    color: white;
+#blue {
+    background-color: #051940;
+}
+
+.image {
+    display: flex;
+    width: 100%;
+}
+
+#coaching-title {
+    background-color: #051940;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    width: 100% !important;
+    position: absolute;
+    left: -45%;
+    top: 45%;
     padding: 3%;
+    display: inline-block;
+    font-size: 50px;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fcc931;
+}
+/***************************/
+/*  */
+/***************************/
+.container {
+    max-width: 100% !important;
 }
 
-.col-md-4 img,
-.rounded.float-right
- {
-    width: 40vw;
+/************************************/
+/* footer */
+/************************************/
+footer {
+    width: 100% !important;
+    padding-top: 3%;
+    background-color: #2a4c09;
+    position: relative;
+    color: white;
 }
 
-.rounded {
-    border-radius: 0rem !important;
+.footer-list {
+    align-items: center;
+    display: flex;
+    float: left;
+    margin: 5%;
+    font-size: 24px;
 }
 
-.row.no-gutters{
-    padding: 0 !important;
-    margin: 0 !important;
+#footer-brand-name {
+    font-size: 30px;
 }
 
-#gold {
-    color: #fcc931;
+.card-body ul,
+.card-body ul li a {
+    text-align: left;
+    list-style-type: none !important;
+    text-decoration: none;
+    color: white;
 }
 
-/* #gold .card-text {
-    font-size: 48px;
-    margin-left: 6%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-#green {
-    background-color: #43B42C;
+#credits {
+    text-align: center;
 }
 
-/* #green .card-text {
-    font-size: 48px;
-    margin-left: -6%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-#green img {
-    margin-left: -106px;
-    /* transform: translate(7.5px, 0); */
+#footer-contact {
+    float: right;
 }
 
-#subscribe {
+.form-control {
+    border-radius: 0% !important;
+    border: 8px solid #fcc931;
     padding: 5%;
-}
-
-#top {
-    font-size: 24px !important;
-    margin-left: -1% !important;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-}
-
-#video {
-    border: none;
 }
 
 /************************************/
@@ -422,15 +427,14 @@ hr {
 } 
 
 .gumroad-follow-form-embed input { 
-    border-radius: 4px; 
+    border-radius: 0px; 
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0; 
     font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; 
     font-size: 15px; 
     line-height: 20px; 
     background: #fff; 
-    border: 1px solid #ddd; 
-    border-right: 0; 
+    border: 8px solid #fcc931; 
     color: #aaa; 
     padding: 10px; 
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02); 
@@ -440,15 +444,15 @@ hr {
     font-smoothing: antialiased; 
     -webkit-appearance: none; 
     -moz-appearance: caret; 
-    width: 40% !important; 
+    width: fit-content !important; 
     height: 40px !important; 
 } 
 
 .gumroad-follow-form-embed button { 
-    border-radius: 4px; 
+    border-radius: 0px; 
     border-top-left-radius: 0; 
     border-bottom-left-radius: 0; 
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12); 
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);  */
     -webkit-transition: all .05s ease-in-out; 
     transition: all .05s ease-in-out; 
     display: inline-block; 
@@ -457,47 +461,12 @@ hr {
     color: #fff; 
     font-size: 15px; 
     line-height: 100%; 
-    font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-    background: #36a9ae; 
-    border: 1px solid #31989d; 
+    /* font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;  */
+    background: #fcc931; 
+    border: 1px solid #fcc931; 
     filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ccfd4, endColorstr=#329ca1, GradientType=0)"; 
-    background: -webkit-linear-gradient(#5ccfd4, #329ca1); 
-    background: linear-gradient(to bottom, #5ccfd4, #329ca1); 
+    /* background: -webkit-linear-gradient(#5ccfd4, #329ca1);  */
+    /* background: linear-gradient(to bottom, #5ccfd4, #329ca1);  */
     height: 40px !important; 
-    width: 20% !important; 
-}
-
-/************************************/
-/* footer */
-/************************************/
-footer {
-    width: 100% !important;
-    padding: 5%;
-    background-color: black;
-    position: relative;
-    color: white;
-}
-
-.row {
-    margin: 0 !important;
-}
-
-#footer-brand-name {
-    font-size: 30px;
-}
-
-.card-body ul,
-.card-body ul li a {
-    text-align: left;
-    list-style-type: none !important;
-    text-decoration: none;
-    color: white;
-}
-
-#credits {
-    text-align: center;
-}
-
-#footer-contact {
-    float: right;
+    width: fit-content !important; 
 }
