@@ -50,7 +50,7 @@ body {
     float: left;
     margin-right: 10px;
     font-size: 22px;
-    list-style-type: none !important;
+    list-style-type: none;
 }
 
 .navbar button.navbar-toggle > span.icon-bar {
@@ -99,6 +99,9 @@ body {
     text-decoration: white !important;
 }
 
+.dropdown-item {
+    font-size: 2vh !important;
+}
 /*****************/
 /* Section one - Smol Boy Logo */
 /*****************/
