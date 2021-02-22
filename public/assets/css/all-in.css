@@ -1,0 +1,43 @@
+#read {
+    text-align: center;
+    display: flex;
+    padding: 5%;
+    /* color: white; */
+}
+
+ol {
+    /* color: white; */
+    text-decoration-color: white;
+    display: block;
+    /* list-style-type: square; */
+    /* height: 3vh; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#pricing {
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 3%;
+}
+
+.col-md {
+    margin: 3vh;
+}
+
+#price-back {
+    background-color: #045DD1;
+    padding: 5%;
+}
+
+.card-header {
+    font-size: 6vh;
+}
+
+#start {
+    padding: 5%;
+    text-align: center;
+}
