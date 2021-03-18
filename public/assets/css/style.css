@@ -339,12 +339,11 @@ body {
     background-color: #051940;
     text-transform: uppercase;
     transform: rotate(270deg);
-    width: 100% !important;
+    width: 109% !important;
     position: absolute;
-    left: -45%;
+    left: -48% !important;
     top: 45%;
     padding: 3%;
-    display: inline-block;
     font-size: 50px;
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 2px;
